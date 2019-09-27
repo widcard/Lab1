@@ -1,0 +1,5 @@
+npa =[1e3,1e5,1e7];
+for k = 1:length(npa)
+	[~,t(k)]=lab1(npa(k),2);
+end
+plot(t,'-p');
