@@ -1,0 +1,10 @@
+function[d,t]=lab1(np,nd)
+np=1e7;nd=2;
+A=randn(np,nd); B= randn(np,nd);
+c=zeros(np,1);
+tic;
+for i =1:np
+    c(i) = (B(i,1)-A(i,1)).^2+(B(i,2)-A(i,2)).^2;
+    d(i) = sqrt(c(i));
+end
+t=toc;
